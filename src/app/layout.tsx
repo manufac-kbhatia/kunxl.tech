@@ -25,9 +25,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
+        {/* Noisy background image */}
+        <div className="absolute inset-0 bg-[url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')] bg-center bg-repeat bg-[length:109px] opacity-60 z-0" />
+        {/* Semi-transparent overlay */}
+        <div className="absolute inset-0 bg-[#212121] opacity-95 z-10" />
+        <div className="relative z-20">
         {children}
+        </div>
       </body>
     </html>
   );
