@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +11,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-spave-grotesk",
+  weight: '700',
+  subsets: ["latin-ext",]
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,13 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
+        className={`${spaceGrotesk.className} ${geistSans.variable} ${geistMono.variable} antialiased relative text-white bg-customShade min-h-screen`}
       >
         {/* Noisy background image */}
-        <div className="absolute inset-0 bg-[url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')] bg-center bg-repeat bg-[length:109px] opacity-60 z-0" />
+        <div className="fixed inset-0 bg-[url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')] bg-repeat bg-[length:109px] opacity-[0.06] z-10" />
         {/* Semi-transparent overlay */}
-        <div className="absolute inset-0 bg-[#212121] opacity-95 z-10" />
-        <div className="relative z-20">
+        <div className="relative opacity-95">
         {children}
         </div>
       </body>
