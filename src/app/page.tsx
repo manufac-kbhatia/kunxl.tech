@@ -98,6 +98,8 @@ export default function Home() {
             <div className="flex gap-5">{versionControl.map((skill) => <Tile key={skill.skill} skill={skill} /> )}</div>
           </div>
         </div>
+
+        {/* Code: work */}
       </div>
     </div>
   );
