@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.24.0",
+    "hook-master-react": "^1.0.3",
     "motion": "^11.14.1",
     "next": "15.1.0",
     "react": "^19.0.0",

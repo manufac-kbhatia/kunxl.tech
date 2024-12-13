@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
         customYellow: 'rgb(255, 243, 18)',
         customShade: "rgb(15, 17, 21)",
+        customBlue: "#31a6fa",
+        customPurple: "#CAA6F7",
+        customGreen: "#BBF7D0"
       },
     },
   },

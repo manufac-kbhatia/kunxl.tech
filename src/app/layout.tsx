@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-spave-grotesk",
   weight: '700',
-  subsets: ["latin-ext",]
+  subsets: ["latin",]
 })
 
 export const metadata: Metadata = {
@@ -36,7 +36,7 @@ export default function RootLayout({
         {/* Noisy background image */}
         <div className="fixed inset-0 bg-[url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')] bg-repeat bg-[length:109px] opacity-[0.06] z-10" />
         {/* Semi-transparent overlay */}
-        <div className="relative opacity-95">
+        <div className="relative opacity-95 z-20">
         {children}
         </div>
       </body>
