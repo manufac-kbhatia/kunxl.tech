@@ -15,7 +15,8 @@ export default {
         customShade: "rgb(15, 17, 21)",
         customBlue: "#31a6fa",
         customPurple: "#CAA6F7",
-        customGreen: "#BBF7D0"
+        customGreen: "#BBF7D0",
+        customRed: "#FF085E"
       },
     },
   },
