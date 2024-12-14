@@ -18,7 +18,8 @@ export default {
         customGreen: "#BBF7D0",
         customRed: "#FF085E",
         customLightBlue: "#0CDCF7",
-        customDarkPurple: "#7700FF"
+        customDarkPurple: "#7700FF",
+        customOrange: "#ffbe6f",
       },
     },
   },

@@ -10,14 +10,15 @@ import {
 } from "@tabler/icons-react";
 import { Time } from "@/components/Time";
 import { Tile } from "@/components/Tile";
-import { database, devops, frameworks, languages, versionControl } from "@/utils/utils";
+import { database, devops, frameworks, languages, versionControl, work } from "@/utils/utils";
+import { WorkCard } from "@/components/Card";
 
 export default function Home() {
   return (
     <div className="">
-      <div className="mx-auto max-w-6xl p-14 mt-2">
+      <div className="mx-auto max-w-6xl p-14 mt-2 flex flex-col gap-36">
         {/* Info section */}
-        <div className="grid lg:grid-cols-2 gap-28 my-40">
+        <div className="grid lg:grid-cols-2 gap-28 mt-40">
           {/* About You */}
           <div className="space-y-5">
             <div className="text-7xl text-customYellow">Kunal</div>
@@ -64,7 +65,7 @@ export default function Home() {
           </div>
         </div>
         {/* About Me */}
-        <div className="grid lg:grid-cols-2 gap-28 my-40">
+        <div className="grid lg:grid-cols-2 gap-28">
           <div className="flex gap-5 items-center">
             <Image
               src={monkey}
@@ -79,7 +80,7 @@ export default function Home() {
               <Time />
             </div>
           </div>
-          <div className="text-customGreen text-xl">Hey, I’m Kunal, I’m a 23-year-old full-stack developer and freelancer based in India. I’ve been coding since 2019 and have been freelancing and working since 2023. I also love solving problems based on algorithms.</div>
+          <div className="text-customGreen text-xl">Hey, I&apos;m Kunal, a 23-year-old full-stack developer and freelancer from India. I&apos;ve been passionate about coding since 2019 and started freelancing and working professionally in 2023. I also enjoy tackling algorithm-based problems.</div>
         </div>
 
         {/* Code Skills  */}
@@ -100,6 +101,16 @@ export default function Home() {
         </div>
 
         {/* Code: work */}
+        <div className="flex flex-col items-center gap-10">
+            <div className="text-customYellow text-6xl"><span className="text-customGreen">Code</span>: <span className="text-customBlue">skills</span></div>
+            <div className="w-full space-y-40">
+              {
+                work.map((experience) => {
+                  return <WorkCard key={experience.company} work={experience} />
+                })
+              }
+            </div>
+        </div>
       </div>
     </div>
   );

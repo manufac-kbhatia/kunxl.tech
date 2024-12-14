@@ -19,6 +19,15 @@ export interface Skill {
   image: string;
   color: string;
 }
+
+export interface Work {
+  company: string,
+  role: string,
+  description: string[],
+  techStack: string[],
+  location: string,
+  fromTo: string,
+}
 export const languages: Skill[] = [
   {
     skill: "Javascript",
@@ -113,3 +122,43 @@ export const versionControl: Skill[] = [
     color: "#6ee7b7",
   },
 ];
+
+export const work: Work[] = [
+  {
+    company: "Manufac Analytics",
+    role: "Software Developer Engineer",
+    description: [
+      "Collaboratively developed Boutique, a custom data visualization library using Apache ECharts with React, facilitating seamless chart integration to provide real-time insights across finance, healthcare, and business intelligence for our team.",
+      "Developed advanced annotation functionality in a collaborative document project called Annotation, similar to Google Docs, with features such as nested annotations.",
+      "Led the development of a product from scratch aimed at assisting Software Architects and Cybersecurity experts in identifying and resolving potential application threats and vulnerabilities.",
+      "Automated the code-signing process for Electron apps on Linux using DSA and RSA algorithms, reducing manual effort by 50%"
+    ],
+    techStack: ["React" , "TypeScript", "NodeJS", "Express", "Shell", "PostgreSQl", "Prisma", "Mantine UI"],
+    location: "Gurgaon, India",
+    fromTo: "May 2024 - Present",
+  },
+  {
+    company: "Frame.io | Freelance",
+    role: "Full Stack Developer",
+    description: [
+      "Developed a screen recorder application for macOS, named Frame.io, within 2 months, featuring a custom mouse simulation over the video recording.",
+      "Implemented a binary search algorithm to achieve 90% precision in mouse simulation, enhancing the accuracy of mouse pointer tracking in recorded videos.",
+      "Eliminated 100% manual updates in electron based macOs Full Stack app by electron github publish."
+    ],
+    techStack: ["React" , "TypeScript", "NodeJS", "ElectronJS", "RecordKit"],
+    location: "Remote, India",
+    fromTo: "March 2024 - April 2024",
+  },
+  {
+    company: "XpressBites",
+    role: "Software Engineer Intern",
+    description: [
+      "Developed a full stack application using React, Express.js, and MongoDB.",
+      "Implemented a RESTful API for the application.",
+      "Utilized AWS S3 to store and serve images for the application."
+    ],
+    techStack: ["React" , "TypeScript", "Express.js", "MongoDB", "AWS"],
+    location: "Remote, India",
+    fromTo: "March 2024 - April 2024",
+  }
+]
