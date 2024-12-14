@@ -23,7 +23,7 @@ export default function Home() {
             <div className="text-7xl text-customYellow">Kunal</div>
             <div className="text-4xl text-customPurple space-y-2">
               <div>Freelancer</div>
-              <div>Full Stack Sorcere</div>
+              <div>Full Stack Sorcerer</div>
               <div>
                 Turns <span className="text-customGreen">Coffee</span> into{" "}
                 <span className="text-customGreen">Code</span>
