@@ -102,7 +102,7 @@ export default function Home() {
 
         {/* Code: work */}
         <div className="flex flex-col items-center gap-10">
-            <div className="text-customYellow text-6xl"><span className="text-customGreen">Code</span>: <span className="text-customBlue">skills</span></div>
+            <div className="text-customYellow text-6xl"><span className="text-customGreen">Code</span>: <span className="text-customBlue">work</span></div>
             <div className="w-full space-y-40">
               {
                 work.map((experience) => {
