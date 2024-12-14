@@ -28,6 +28,15 @@ export interface Work {
   location: string,
   fromTo: string,
 }
+
+export interface Project {
+  name: string,
+  description: string,
+  techStack: string[],
+  github?: string,
+  liveURL?: string,
+}
+
 export const languages: Skill[] = [
   {
     skill: "Javascript",
@@ -160,5 +169,34 @@ export const work: Work[] = [
     techStack: ["React" , "TypeScript", "Express.js", "MongoDB", "AWS"],
     location: "Remote, India",
     fromTo: "March 2024 - April 2024",
+  }
+]
+
+export const projects: Project[] = [
+  {
+    name: "Hook Master",
+    description: "A fully featured React custom hook library",
+    techStack: ["React.js", "Next.js", "Typescript", "Tailwind", "Nextra"],
+    github: "https://github.com/Kunalkbhatia/HookMaster",
+    liveURL: "https://www.hook-master.xyz/"
+  },
+  {
+    name: "Short Me",
+    description: "URL shortening amplified, where insights meet impact",
+    techStack: ["React.js", "Next.js", "NextAuth", "Typescript", "Tailwind"],
+    github: "https://github.com/Kunalkbhatia/shortMe",
+    liveURL: "https://www.shortme.fun/"
+  },
+  {
+    name: "Quick Intern",
+    description: "Automate the process of apply internship at Internshala",
+    techStack: ["Javascript", "Node.js", "Puppeteer.js"],
+    github: "https://github.com/Kunalkbhatia/QuickIntern",
+  },
+  {
+    name: "kunxl.tech",
+    description: "A portfolio handcrafter by me in 7hours.",
+    techStack: ["NextJs", "Shadcn", "Framer-motion", "Websockets"],
+    github: "https://github.com/Kunalkbhatia/QuickIntern",
   }
 ]

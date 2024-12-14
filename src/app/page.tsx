@@ -10,8 +10,8 @@ import {
 } from "@tabler/icons-react";
 import { Time } from "@/components/Time";
 import { Tile } from "@/components/Tile";
-import { database, devops, frameworks, languages, versionControl, work } from "@/utils/utils";
-import { WorkCard } from "@/components/Card";
+import { database, devops, frameworks, languages, projects, versionControl, work } from "@/utils/utils";
+import { ProjectCard, WorkCard } from "@/components/Card";
 
 export default function Home() {
   return (
@@ -107,6 +107,18 @@ export default function Home() {
               {
                 work.map((experience) => {
                   return <WorkCard key={experience.company} work={experience} />
+                })
+              }
+            </div>
+        </div>
+
+        {/* Code: Projects */}
+        <div className="flex flex-col items-center gap-10">
+        <div className="text-customYellow text-6xl"><span className="text-customGreen">Code</span>: <span className="text-customBlue">skills</span></div>
+            <div className="grid lg:grid-cols-2 gap-5">
+              {
+                projects.map((project) => {
+                  return <ProjectCard key={project.name} project={project} />
                 })
               }
             </div>
