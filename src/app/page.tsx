@@ -12,6 +12,7 @@ import { Time } from "@/components/Time";
 import { Tile } from "@/components/Tile";
 import { database, devops, frameworks, languages, projects, versionControl, work } from "@/utils/utils";
 import { ProjectCard, WorkCard } from "@/components/Card";
+import { LeetCodeHeatmap } from "@/components/LeetcodeHeatMap";
 
 export default function Home() {
   return (
@@ -122,6 +123,12 @@ export default function Home() {
                 })
               }
             </div>
+        </div>
+
+        {/* Leetcode heatmap */}
+        <div className="flex flex-col gap-4 items-center">
+        <div className="text-customGreen text-6xl">Want to see more ?</div> 
+        <LeetCodeHeatmap />
         </div>
       </div>
     </div>

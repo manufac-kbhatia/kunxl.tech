@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@tabler/icons-react": "^3.24.0",
+    "@types/react-calendar-heatmap": "^1.9.0",
     "hook-master-react": "^1.0.3",
     "motion": "^11.14.1",
     "next": "15.1.0",
     "react": "^19.0.0",
+    "react-calendar-heatmap": "^1.9.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
