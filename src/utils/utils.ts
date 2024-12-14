@@ -188,15 +188,15 @@ export const projects: Project[] = [
     liveURL: "https://www.shortme.fun/"
   },
   {
+    name: "kunxl.tech",
+    description: "A portfolio handcrafter by me in 7hours.",
+    techStack: ["NextJs", "Shadcn", "Framer-motion", "Websockets"],
+    github: "https://github.com/Kunalkbhatia/QuickIntern",
+  },
+  {
     name: "Quick Intern",
     description: "Automate the process of apply internship at Internshala",
     techStack: ["Javascript", "Node.js", "Puppeteer.js"],
     github: "https://github.com/Kunalkbhatia/QuickIntern",
   },
-  {
-    name: "kunxl.tech",
-    description: "A portfolio handcrafter by me in 7hours.",
-    techStack: ["NextJs", "Shadcn", "Framer-motion", "Websockets"],
-    github: "https://github.com/Kunalkbhatia/QuickIntern",
-  }
 ]
