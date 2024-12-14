@@ -114,7 +114,7 @@ export default function Home() {
 
         {/* Code: Projects */}
         <div className="flex flex-col items-center gap-10">
-        <div className="text-customYellow text-6xl"><span className="text-customGreen">Code</span>: <span className="text-customBlue">skills</span></div>
+        <div className="text-customYellow text-6xl"><span className="text-customGreen">Code</span>: <span className="text-customBlue">projects</span></div>
             <div className="grid lg:grid-cols-2 gap-5">
               {
                 projects.map((project) => {
