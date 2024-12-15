@@ -10,15 +10,11 @@ export function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // You can adjust this value to control when the header becomes visible
       const scrollThreshold = 200; 
       setIsVisible(window.scrollY > scrollThreshold);
     };
-
-    // Add scroll event listener
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
