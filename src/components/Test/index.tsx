@@ -66,8 +66,6 @@ export function Test() {
           socket.send(JSON.stringify(heartbeatMessage));
         }, heartBeat);
       } else if (data.op === 0) {
-        console.log(data.d);
-        // console.log(`https://cdn.discordapp.com/app-assets/${data.d.activities[0].application_id}/${data.d?.activities[0].assets.large_image}.png`);
         const vsCode: VSCodeActivity = data.d.activities.find(
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
           (activity: any) => activity.name === "Visual Studio Code"
