@@ -1,6 +1,5 @@
 import Image from "next/image";
 import profile from "../../public/profile.jpeg";
-import monkey from "../../public/icon.png";
 import { NPMButton } from "@/components/npmButton";
 import {
   IconBrandGithub,
@@ -9,7 +8,6 @@ import {
   IconHeart,
   IconMail,
 } from "@tabler/icons-react";
-import { Time } from "@/components/Time";
 import { Tile } from "@/components/Tile";
 import {
   database,
@@ -22,6 +20,7 @@ import {
 } from "@/utils/utils";
 import { ProjectCard, WorkCard } from "@/components/Card";
 import { LeetCodeHeatmap } from "@/components/LeetcodeHeatMap";
+import { Test } from "@/components/Test";
 
 export default function Home() {
   return (
@@ -76,20 +75,7 @@ export default function Home() {
         </div>
         {/* About Me */}
         <div className="grid lg:grid-cols-2 gap-28">
-          <div className="flex gap-5 items-center">
-            <Image
-              src={monkey}
-              alt="monkey"
-              height={100}
-              width={100}
-              className="bg-customGreen rounded-3xl"
-            />
-            <div className="text-2xl flex flex-col gap-1">
-              <div className="text-customLightBlue">@kunxl</div>
-              <div className="text-customPurple">Idle</div>
-              <Time />
-            </div>
-          </div>
+          <Test/>
           <div className="text-customGreen text-xl">
             Hey, I&apos;m Kunal, a 23-year-old full-stack developer and
             freelancer from India. I&apos;ve been passionate about coding since
@@ -174,23 +160,25 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           <div className="w-full h-1 bg-customRed"></div>
           <div className="flex justify-between items-center">
-          <div className="flex gap-2 text-customGreen">
-            <a href="">
-              <IconBrandGithub className="w-10 h-10" />
-            </a>
-            <a href="">
-              <IconMail className="w-10 h-10" />
-            </a>
-            <a href="">
-              <IconBrandTwitter className="w-10 h-10" />
-            </a>
-            <a href="">
-              <IconBrandLinkedin className="w-10 h-10" />
-            </a>
+            <div className="flex gap-2 text-customGreen">
+              <a href="">
+                <IconBrandGithub className="w-10 h-10" />
+              </a>
+              <a href="">
+                <IconMail className="w-10 h-10" />
+              </a>
+              <a href="">
+                <IconBrandTwitter className="w-10 h-10" />
+              </a>
+              <a href="">
+                <IconBrandLinkedin className="w-10 h-10" />
+              </a>
+            </div>
+            <div className="flex gap-1 text-2xl items-center text-customPurple">
+              <span>Made with</span> <IconHeart fill="#FF085E" />{" "}
+              <span>, Thank You!</span>
+            </div>
           </div>
-          <div className="flex gap-1 text-2xl items-center text-customPurple"><span>Made with</span> <IconHeart fill="#FF085E"/> <span>, Thank You!</span></div>
-          </div>
-          
         </div>
       </div>
     </div>
