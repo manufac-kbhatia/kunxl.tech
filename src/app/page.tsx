@@ -20,14 +20,16 @@ import {
 } from "@/utils/utils";
 import { ProjectCard, WorkCard } from "@/components/Card";
 import { LeetCodeHeatmap } from "@/components/LeetcodeHeatMap";
-import { Test } from "@/components/Test";
+import { Activity } from "@/components/Activity";
+import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
     <div className="">
+      <Header/>
       <div className="mx-auto max-w-6xl p-14 mt-2 flex flex-col gap-36">
         {/* Info section */}
-        <div className="grid lg:grid-cols-2 gap-28 mt-40">
+        <div id="about" className="grid lg:grid-cols-2 gap-28 mt-40">
           {/* About You */}
           <div className="space-y-5">
             <div className="text-7xl text-customYellow">Kunal</div>
@@ -75,7 +77,7 @@ export default function Home() {
         </div>
         {/* About Me */}
         <div className="grid lg:grid-cols-2 gap-28">
-          <Test/>
+          <Activity/>
           <div className="text-customGreen text-xl">
             Hey, I&apos;m Kunal, a 23-year-old full-stack developer and
             freelancer from India. I&apos;ve been passionate about coding since
@@ -85,7 +87,7 @@ export default function Home() {
         </div>
 
         {/* Code Skills  */}
-        <div className="flex flex-col items-center gap-10">
+        <div id="skills" className="flex flex-col items-center gap-10">
           <div className="text-customYellow text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">skills</span>
@@ -125,7 +127,7 @@ export default function Home() {
         </div>
 
         {/* Code: work */}
-        <div className="flex flex-col items-center gap-10">
+        <div id="work" className="flex flex-col items-center gap-10">
           <div className="text-customYellow text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">work</span>
@@ -138,7 +140,7 @@ export default function Home() {
         </div>
 
         {/* Code: Projects */}
-        <div className="flex flex-col items-center gap-10">
+        <div id="projects" className="flex flex-col items-center gap-10">
           <div className="text-customYellow text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">projects</span>

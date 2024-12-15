@@ -38,7 +38,7 @@ export interface Spotify {
   track_id: string;
 }
 
-export function Test() {
+export function Activity() {
   const [vsCodeData, setVSCodeData] = useState<VSCodeActivity | null>(null);
   const [spotifyData, setSpotifyData] = useState<Spotify | null>(null);
   const [status, setStatus] = useState<string>("offline");

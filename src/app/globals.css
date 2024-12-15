@@ -20,6 +20,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 .custom-gradient {
   background-color: transparent;
   background-image: radial-gradient(transparent 1px, rgb(15, 17, 21) 1px);
@@ -139,4 +144,5 @@ body {
   backdrop-filter: blur(3px);
   mask: linear-gradient(rgb(0, 0, 0) 60%, rgba(0, 0, 0, 0) 100%);
   opacity: 1;
+height: 100px;
 }
