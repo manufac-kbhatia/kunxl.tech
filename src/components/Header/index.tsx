@@ -27,7 +27,7 @@ export function Header() {
   return (
     <div 
       className={`
-        fixed top-0 left-0 right-0 
+        fixed inset-0
         flex justify-between items-center 
         styled-div z-30 p-5 
         transition-all duration-300 ease-in-out
