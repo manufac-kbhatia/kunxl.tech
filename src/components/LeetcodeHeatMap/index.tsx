@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import CalendarHeatmap from "react-calendar-heatmap";
+import { LeetCodeChart } from "../LeetCodeChart";
 
 export type UserStatistics = {
   status: "success" | "error";
@@ -27,6 +28,7 @@ export type Progress = {
 export function LeetCodeHeatmap() {
   const [data, setData] = useState<Progress[]>();
   const [total, setTotal] = useState(0);
+  const [insights, setInsights] = useState<UserStatistics>();
 
   const handleClick = async () => {
     const response = await fetch(
@@ -43,6 +45,7 @@ export function LeetCodeHeatmap() {
     });
     setData(transformedData);
     setTotal(data.totalSolved);
+    setInsights(data);
   };
 
   return (
@@ -78,6 +81,10 @@ export function LeetCodeHeatmap() {
             />
           </div>
         </div>
+      )}
+
+      {insights && (
+        <LeetCodeChart insights={insights} />
       )}
     </div>
   );
