@@ -57,7 +57,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col gap-2">
               <div className="text-sm text-customBlue">
-                Check out my new react library!
+                Check out my new react hook library!
               </div>
               <div>
                 <NPMButton cmd="npm install hook-master-react" />
