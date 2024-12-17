@@ -191,8 +191,8 @@ export const projects: Project[] = [
     name: "kunxl.tech",
     description: "A portfolio handcrafter by me in 7hours.",
     techStack: ["NextJs", "Shadcn", "Framer-motion", "Websockets"],
-    liveURL: "https://kunxl-tech-w4od.vercel.app/",
-    github: "https://kunxl-tech-w4od.vercel.app/",
+    liveURL: "https://www.kunxl.tech/",
+    github: "https://www.kunxl.tech/",
   },
   {
     name: "Quick Intern",
