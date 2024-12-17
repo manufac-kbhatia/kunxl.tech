@@ -42,16 +42,16 @@ export default function Home() {
               </div>
             </div>
             <div className="flex gap-2 text-customRed">
-              <a href="">
+              <a href="https://github.com/Kunalkbhatia">
                 <IconBrandGithub className="w-10 h-10" />
               </a>
-              <a href="">
+              <a href="mailto:bhatiakbkb@gmail.com">
                 <IconMail className="w-10 h-10" />
               </a>
-              <a href="">
+              <a href="https://x.com/devKunaldev">
                 <IconBrandTwitter className="w-10 h-10" />
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/in/bhatia-kunal/">
                 <IconBrandLinkedin className="w-10 h-10" />
               </a>
             </div>
@@ -177,16 +177,16 @@ export default function Home() {
           <div className="w-full h-1 bg-customRed"></div>
           <div className="flex justify-between items-center gap-5">
             <div className="flex gap-2 text-customGreen">
-              <a href="">
+              <a href="https://github.com/Kunalkbhatia">
                 <IconBrandGithub className="w-5 h-5 md:w-10 md:h-10" />
               </a>
-              <a href="">
+              <a href="mailto:bhatiakbkb@gmail.com">
                 <IconMail className="w-5 h-5 md:w-10 md:h-10" />
               </a>
-              <a href="">
+              <a href="https://x.com/devKunaldev">
                 <IconBrandTwitter className="w-5 h-5 md:w-10 md:h-10" />
               </a>
-              <a href="">
+              <a href="https://www.linkedin.com/in/bhatia-kunal/">
                 <IconBrandLinkedin className="w-5 h-5 md:w-10 md:h-10" />
               </a>
             </div>
