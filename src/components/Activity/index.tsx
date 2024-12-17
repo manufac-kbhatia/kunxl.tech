@@ -121,7 +121,7 @@ export function Activity() {
           alt="album cover"
           height={100}
           width={100}
-          className="bg-customGreen rounded-full object-cover spin-fast"
+          className="rounded-full object-cover spin-fast"
         />
         <div className="flex flex-col gap-2">
           <div className="text-customLightBlue text-3xl">
@@ -142,13 +142,15 @@ export function Activity() {
                   alt="vs code"
                   height={100}
                   width={100}
-                  className="bg-customGreen rounded-full w-full h-full object-cover"
+                  className="rounded-full w-full h-full object-cover"
                 />
               </div>
+              <div className="flex flex-wrap">
 
               <div>{vsCodeData.state}</div>
               <span>~</span>
               <div>{vsCodeData.details}</div>
+              </div>
             </div>
           )}
         </div>
@@ -162,7 +164,7 @@ export function Activity() {
           alt="album cover"
           height={100}
           width={100}
-          className="bg-customGreen rounded-3xl object-cover"
+          className="rounded-3xl object-cover"
         />
         <div className="text-2xl flex flex-col gap-1">
           <div className="text-customLightBlue">@kunxl</div>

@@ -27,13 +27,13 @@ export default function Home() {
   return (
     <div className="">
       <Header/>
-      <div className="mx-auto max-w-6xl p-14 mt-2 flex flex-col gap-36">
+      <div className="mx-auto max-w-6xl p-4 lg:p-14 mt-2 flex flex-col gap-36">
         {/* Info section */}
-        <div id="about" className="grid lg:grid-cols-2 gap-28 mt-40">
+        <div id="about" className="grid lg:grid-cols-2 gap-28 mt-24">
           {/* About You */}
           <div className="space-y-5">
-            <div className="text-7xl text-customYellow">Kunal</div>
-            <div className="text-4xl text-customPurple space-y-2">
+            <div className="text-8xl text-customYellow">Kunal</div>
+            <div className="text-3xl lg:text-4xl text-customPurple space-y-2">
               <div>Freelancer</div>
               <div>Full Stack Sorcerer</div>
               <div>
@@ -56,7 +56,7 @@ export default function Home() {
               </a>
             </div>
             <div className="flex flex-col gap-2">
-              <div className="text-sm text-customBlue">
+              <div className="text-md text-customBlue">
                 Check out my new react hook library!
               </div>
               <div>
@@ -64,6 +64,8 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+
           {/* {Profile image} */}
           <div className="w-96 h-96 overflow-hidden rounded-3xl">
             <Image
@@ -86,39 +88,42 @@ export default function Home() {
           </div>
         </div>
 
+
+
+
         {/* Code Skills  */}
         <div id="skills" className="flex flex-col items-center gap-10">
-          <div className="text-customYellow text-6xl">
+          <div className="text-customYellow text-5xl lg:text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">skills</span>
           </div>
           <div className="flex flex-col gap-5 items-center">
             {/* languages */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap">
               {languages.map((skill) => (
                 <Tile key={skill.skill} skill={skill} />
               ))}
             </div>
             {/* Frameworks */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center">
               {frameworks.map((skill) => (
                 <Tile key={skill.skill} skill={skill} />
               ))}
             </div>
             {/* devops */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center">
               {devops.map((skill) => (
                 <Tile key={skill.skill} skill={skill} />
               ))}
             </div>
             {/* database */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center">
               {database.map((skill) => (
                 <Tile key={skill.skill} skill={skill} />
               ))}
             </div>
             {/* versionc control */}
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center">
               {versionControl.map((skill) => (
                 <Tile key={skill.skill} skill={skill} />
               ))}
@@ -128,7 +133,7 @@ export default function Home() {
 
         {/* Code: work */}
         <div id="work" className="flex flex-col items-center gap-10">
-          <div className="text-customYellow text-6xl">
+          <div className="text-customYellow text-5xl lg:text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">work</span>
           </div>
@@ -141,11 +146,11 @@ export default function Home() {
 
         {/* Code: Projects */}
         <div id="projects" className="flex flex-col items-center gap-10">
-          <div className="text-customYellow text-6xl">
+          <div className="text-customYellow text-5xl lg:text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">projects</span>
           </div>
-          <div className="grid lg:grid-cols-2 gap-5">
+          <div className="grid lg:grid-cols-2 gap-5 w-full">
             {projects.map((project) => {
               return <ProjectCard key={project.name} project={project} />;
             })}
