@@ -13,7 +13,7 @@ export function WorkCard({work} : {work: Work}) {
                     </div>
                     <div>@kunxl</div>
                 </div>
-                <div className="flex gap-3 flex-wrap items-center justify-center text-xs lg:text-xl"><span className="text-customBlue">{work.location}</span> <span className="text-customYellow hidden md:block">•</span> <span className="text-customGreen">{work.fromTo}</span></div>
+                <div className="flex gap-3 flex-wrap items-center justify-center text-xs md:text-xl"><span className="text-customBlue">{work.location}</span> <span className="text-customYellow hidden md:block">•</span> <span className="text-customGreen">{work.fromTo}</span></div>
             </div>
             <div className="flex flex-col gap-3">
                 <div className="text-customOrange text-3xl">{work.company}</div>

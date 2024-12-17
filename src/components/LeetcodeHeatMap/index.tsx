@@ -59,7 +59,7 @@ export function LeetCodeHeatmap() {
 
       {data && (
         <div className="w-full flex flex-col items-center gap-5">
-          <div className="text-5xl lg:text-6xl">
+          <div className="text-5xl md:text-6xl">
             <span className="text-customGreen">LeetCode</span>:{" "}
             <span className="text-customBlue">{total} + </span>
           </div>

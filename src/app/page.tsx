@@ -27,13 +27,13 @@ export default function Home() {
   return (
     <div className="">
       <Header/>
-      <div className="mx-auto max-w-6xl p-4 lg:p-14 mt-2 flex flex-col gap-36">
+      <div className="mx-auto max-w-6xl p-4 md:p-14 mt-2 flex flex-col gap-36">
         {/* Info section */}
         <div id="about" className="grid lg:grid-cols-2 gap-28 mt-24">
           {/* About You */}
           <div className="space-y-5">
             <div className="text-8xl text-customYellow">Kunal</div>
-            <div className="text-3xl lg:text-4xl text-customPurple space-y-2">
+            <div className="text-3xl md:text-4xl text-customPurple space-y-2">
               <div>Freelancer</div>
               <div>Full Stack Sorcerer</div>
               <div>
@@ -99,13 +99,13 @@ export default function Home() {
 
         {/* Code Skills  */}
         <div id="skills" className="flex flex-col items-center gap-10">
-          <div className="text-customYellow text-5xl lg:text-6xl">
+          <div className="text-customYellow text-5xl md:text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">skills</span>
           </div>
           <div className="flex flex-col gap-5 items-center">
             {/* languages */}
-            <div className="flex gap-5 flex-wrap">
+            <div className="flex gap-5 flex-wrap justify-center">
               {languages.map((skill) => (
                 <Tile key={skill.skill} skill={skill} />
               ))}
@@ -139,7 +139,7 @@ export default function Home() {
 
         {/* Code: work */}
         <div id="work" className="flex flex-col items-center gap-10">
-          <div className="text-customYellow text-5xl lg:text-6xl">
+          <div className="text-customYellow text-5xl md:text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">work</span>
           </div>
@@ -152,7 +152,7 @@ export default function Home() {
 
         {/* Code: Projects */}
         <div id="projects" className="flex flex-col items-center gap-10">
-          <div className="text-customYellow text-5xl lg:text-6xl">
+          <div className="text-customYellow text-5xl md:text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">projects</span>
           </div>
@@ -165,7 +165,7 @@ export default function Home() {
 
         {/* Leetcode heatmap */}
         <div className="flex flex-col gap-4 items-center">
-          <div className="text-customGreen text-4xl lg:text-6xl text-center">Want to see more ?</div>
+          <div className="text-customGreen text-4xl md:text-6xl text-center">Want to see more ?</div>
           <LeetCodeHeatmap />
         </div>
 
@@ -175,19 +175,19 @@ export default function Home() {
           <div className="flex justify-between items-center gap-5">
             <div className="flex gap-2 text-customGreen">
               <a href="">
-                <IconBrandGithub className="w-5 h-5 lg:w-10 lg:h-10" />
+                <IconBrandGithub className="w-5 h-5 md:w-10 md:h-10" />
               </a>
               <a href="">
-                <IconMail className="w-5 h-5 lg:w-10 lg:h-10" />
+                <IconMail className="w-5 h-5 md:w-10 md:h-10" />
               </a>
               <a href="">
-                <IconBrandTwitter className="w-5 h-5 lg:w-10 lg:h-10" />
+                <IconBrandTwitter className="w-5 h-5 md:w-10 md:h-10" />
               </a>
               <a href="">
-                <IconBrandLinkedin className="w-5 h-5 lg:w-10 lg:h-10" />
+                <IconBrandLinkedin className="w-5 h-5 md:w-10 md:h-10" />
               </a>
             </div>
-            <div className="flex gap-1 text-md lg:text-2xl items-center text-customPurple ">
+            <div className="flex gap-1 text-md md:text-2xl items-center text-customPurple ">
               <span>Made with</span> <IconHeart fill="#FF085E" className="w-5 h-5" />{" "}
               <span>, Thank You!</span>
             </div>
