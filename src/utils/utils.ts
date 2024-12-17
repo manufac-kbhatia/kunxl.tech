@@ -1,7 +1,7 @@
 import javascript from "../../public/javascript (1).svg";
 import typescript from "../../public/typescript.svg";
 import cpp from "../../public/cpp-svgrepo-com.svg";
-import go from "../../public/go-svgrepo-com.svg";
+import c from "../../public/c-program-icon.svg";
 import docker from "../../public/docker.svg";
 import aws from "../../public/aws.svg";
 import github from "../../public/github-color-svgrepo-com.svg";
@@ -54,8 +54,8 @@ export const languages: Skill[] = [
     color: "#FF085E",
   },
   {
-    skill: "Go",
-    image: go,
+    skill: "C",
+    image: c,
     color: "#FF085E",
   },
 ];
