@@ -67,6 +67,8 @@ export default function Home() {
 
 
           {/* {Profile image} */}
+          <div className="flex flex-col gap-5">
+          <div className="text-3xl lg:hidden pl-3 text-customGreen">You got it, that&apos;s me!</div>
           <div className="w-96 h-96 overflow-hidden rounded-3xl">
             <Image
               src={profile}
@@ -74,8 +76,9 @@ export default function Home() {
               className="object-cover w-full h-full object-top"
               width={200}
               height={200}
-            />
+              />
           </div>
+              </div>
         </div>
         {/* About Me */}
         <div className="grid lg:grid-cols-2 gap-28">
