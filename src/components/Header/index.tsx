@@ -46,6 +46,7 @@ export function Header() {
         <Link href="#skills">Skills</Link>
         <Link href="#work">Work</Link>
         <Link href="#projects">Projects</Link>
+        <Link href="https://drive.google.com/file/d/1nVlGWqUZgnVKdTfhSdINRJvp1LrqFS_d/view?usp=drive_link">CV</Link>
       </nav>
     </div>
   );
