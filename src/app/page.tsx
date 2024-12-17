@@ -165,30 +165,30 @@ export default function Home() {
 
         {/* Leetcode heatmap */}
         <div className="flex flex-col gap-4 items-center">
-          <div className="text-customGreen text-6xl">Want to see more ?</div>
+          <div className="text-customGreen text-4xl lg:text-6xl text-center">Want to see more ?</div>
           <LeetCodeHeatmap />
         </div>
 
         {/* Footer */}
         <div className="flex flex-col gap-4">
           <div className="w-full h-1 bg-customRed"></div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center gap-5">
             <div className="flex gap-2 text-customGreen">
               <a href="">
-                <IconBrandGithub className="w-10 h-10" />
+                <IconBrandGithub className="w-5 h-5 lg:w-10 lg:h-10" />
               </a>
               <a href="">
-                <IconMail className="w-10 h-10" />
+                <IconMail className="w-5 h-5 lg:w-10 lg:h-10" />
               </a>
               <a href="">
-                <IconBrandTwitter className="w-10 h-10" />
+                <IconBrandTwitter className="w-5 h-5 lg:w-10 lg:h-10" />
               </a>
               <a href="">
-                <IconBrandLinkedin className="w-10 h-10" />
+                <IconBrandLinkedin className="w-5 h-5 lg:w-10 lg:h-10" />
               </a>
             </div>
-            <div className="flex gap-1 text-2xl items-center text-customPurple">
-              <span>Made with</span> <IconHeart fill="#FF085E" />{" "}
+            <div className="flex gap-1 text-md lg:text-2xl items-center text-customPurple ">
+              <span>Made with</span> <IconHeart fill="#FF085E" className="w-5 h-5" />{" "}
               <span>, Thank You!</span>
             </div>
           </div>
