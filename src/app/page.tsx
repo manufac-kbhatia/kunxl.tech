@@ -79,12 +79,18 @@ export default function Home() {
         </div>
         {/* About Me */}
         <div className="grid lg:grid-cols-2 gap-28">
+          <div className="flex flex-col gap-5">
+            <div className="md:hidden text-4xl text-customPurple">Activity</div>
           <Activity/>
+          </div>
+          <div className="flex flex-col gap-5">
+          <div className="md:hidden text-4xl text-customPurple">Bio</div>
           <div className="text-customGreen text-xl">
             Hey, I&apos;m Kunal, a 23-year-old full-stack developer and
             freelancer from India. I&apos;ve been passionate about coding since
             2019 and started freelancing and working professionally in 2023. I
             also enjoy tackling algorithm-based problems.
+          </div>
           </div>
         </div>
 
