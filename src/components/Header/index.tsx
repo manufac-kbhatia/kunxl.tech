@@ -41,12 +41,12 @@ export function Header() {
           className="bg-customYellow rounded-full w-full h-full object-cover"
         />
       </div>
-      <nav className="flex gap-5">
+      <nav className="flex gap-5 items-center">
         <Link href="#about">About</Link>
         <Link href="#skills">Skills</Link>
         <Link href="#work">Work</Link>
         <Link href="#projects">Projects</Link>
-        <Link href="https://drive.google.com/file/d/1nVlGWqUZgnVKdTfhSdINRJvp1LrqFS_d/view?usp=drive_link">CV</Link>
+        <Link href="https://drive.google.com/file/d/1nVlGWqUZgnVKdTfhSdINRJvp1LrqFS_d/view?usp=drive_link" className='text-2xl bg-customYellow p-2 rounded-full text-customShade'>CV</Link>
       </nav>
     </div>
   );
