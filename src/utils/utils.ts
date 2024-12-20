@@ -168,7 +168,7 @@ export const work: Work[] = [
     ],
     techStack: ["React" , "TypeScript", "Express.js", "MongoDB", "AWS"],
     location: "Remote, India",
-    fromTo: "March 2024 - April 2024",
+    fromTo: "April 2023 - August 2023",
   }
 ]
 
