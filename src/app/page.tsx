@@ -27,14 +27,15 @@ export default function Home() {
   return (
     <div className="w-[100vw]">
       <Header />
-      <div className="mx-auto max-w-6xl md:p-10 mt-2 flex flex-col gap-36">
+      <div className="mx-auto max-w-6xl md:p-10 flex flex-col gap-36">
         {/* Info section */}
         <div
           id="about"
-          className="grid lg:grid-cols-2 gap-28 mt-24 p-4"
+          className="grid lg:grid-cols-2 gap-28 mt-24"
         >
           {/* About You */}
           <div className="space-y-5">
+            <div className="p-2">
             <div className="text-8xl text-customYellow">Kunal</div>
             <div className="text-3xl md:text-4xl text-customPurple space-y-2">
               <div>Freelancer</div>
@@ -58,8 +59,9 @@ export default function Home() {
                 <IconBrandLinkedin className="w-10 h-10" />
               </a>
             </div>
+            </div>
             <div className="flex flex-col gap-2">
-              <div className="text-md text-customBlue">
+              <div className="text-md text-customBlue pl-1">
                 Check out my new react hook library!
               </div>
               <div>
@@ -70,10 +72,10 @@ export default function Home() {
 
           {/* {Profile image} */}
           <div className="flex flex-col gap-5 items-center justify-center">
-            <div className="text-3xl lg:hidden pl-3 text-customGreen">
+            <div className="text-3xl lg:hidden text-customGreen">
               You got it, that&apos;s me!
             </div>
-            <div className="w-96 h-96 overflow-hidden rounded-3xl">
+            <div className="w-80 h-80 md:w-96 md:h-96 overflow-hidden rounded-3xl">
               <Image
                 src={profile}
                 alt="profile"
