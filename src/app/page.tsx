@@ -25,11 +25,14 @@ import { Header } from "@/components/Header";
 
 export default function Home() {
   return (
-    <div className="">
-      <Header/>
-      <div className="mx-auto max-w-6xl p-4 md:p-14 mt-2 flex flex-col gap-36">
+    <div className="w-[100vw]">
+      <Header />
+      <div className="mx-auto max-w-6xl md:p-10 mt-2 flex flex-col gap-36">
         {/* Info section */}
-        <div id="about" className="grid lg:grid-cols-2 gap-28 mt-24">
+        <div
+          id="about"
+          className="grid lg:grid-cols-2 gap-28 mt-24 p-4"
+        >
           {/* About You */}
           <div className="space-y-5">
             <div className="text-8xl text-customYellow">Kunal</div>
@@ -65,40 +68,38 @@ export default function Home() {
             </div>
           </div>
 
-
           {/* {Profile image} */}
-          <div className="flex flex-col gap-5">
-          <div className="text-3xl lg:hidden pl-3 text-customGreen">You got it, that&apos;s me!</div>
-          <div className="w-96 h-96 overflow-hidden rounded-3xl">
-            <Image
-              src={profile}
-              alt="profile"
-              className="object-cover w-full h-full object-top"
-              width={200}
-              height={200}
+          <div className="flex flex-col gap-5 items-center justify-center">
+            <div className="text-3xl lg:hidden pl-3 text-customGreen">
+              You got it, that&apos;s me!
+            </div>
+            <div className="w-96 h-96 overflow-hidden rounded-3xl">
+              <Image
+                src={profile}
+                alt="profile"
+                className="object-cover w-full h-full object-top"
+                width={200}
+                height={200}
               />
+            </div>
           </div>
-              </div>
         </div>
         {/* About Me */}
-        <div className="grid lg:grid-cols-2 gap-28">
+        <div className="grid lg:grid-cols-2 gap-28 p-4">
           <div className="flex flex-col gap-5">
             <div className="md:hidden text-4xl text-customPurple">Activity</div>
-          <Activity/>
+            <Activity />
           </div>
           <div className="flex flex-col gap-5">
-          <div className="md:hidden text-4xl text-customPurple">Bio</div>
-          <div className="text-customGreen text-xl">
-            Hey, I&apos;m Kunal, a 23-year-old full-stack developer and
-            freelancer from India. I&apos;ve been passionate about coding since
-            2019 and started freelancing and working professionally in 2023. I
-            also enjoy tackling algorithm-based problems.
-          </div>
+            <div className="md:hidden text-4xl text-customPurple">Bio</div>
+            <div className="text-customGreen text-xl">
+              Hey, I&apos;m Kunal, a 23-year-old full-stack developer and
+              freelancer from India. I&apos;ve been passionate about coding
+              since 2019 and started freelancing and working professionally in
+              2023. I also enjoy tackling algorithm-based problems.
+            </div>
           </div>
         </div>
-
-
-
 
         {/* Code Skills  */}
         <div id="skills" className="flex flex-col items-center gap-10">
@@ -141,7 +142,7 @@ export default function Home() {
         </div>
 
         {/* Code: work */}
-        <div id="work" className="flex flex-col items-center gap-10">
+        <div id="work" className="flex flex-col items-center gap-10 p-4">
           <div className="text-customYellow text-5xl md:text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">work</span>
@@ -154,7 +155,7 @@ export default function Home() {
         </div>
 
         {/* Code: Projects */}
-        <div id="projects" className="flex flex-col items-center gap-10">
+        <div id="projects" className="flex flex-col items-center gap-10 p-4">
           <div className="text-customYellow text-5xl md:text-6xl">
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">projects</span>
@@ -168,7 +169,9 @@ export default function Home() {
 
         {/* Leetcode heatmap */}
         <div className="flex flex-col gap-4 items-center">
-          <div className="text-customGreen text-4xl md:text-6xl text-center">Want to see more ?</div>
+          <div className="text-customGreen text-4xl md:text-6xl text-center">
+            Want to see more ?
+          </div>
           <LeetCodeHeatmap />
         </div>
 
@@ -191,7 +194,8 @@ export default function Home() {
               </a>
             </div>
             <div className="flex gap-1 text-md md:text-2xl items-center text-customPurple ">
-              <span>Made with</span> <IconHeart fill="#FF085E" className="w-5 h-5" />{" "}
+              <span>Made with</span>{" "}
+              <IconHeart fill="#FF085E" className="w-5 h-5" />{" "}
               <span>, Thank You!</span>
             </div>
           </div>
