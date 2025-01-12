@@ -137,12 +137,13 @@ export const work: Work[] = [
     company: "Manufac Analytics",
     role: "Software Developer Engineer",
     description: [
+      "Conducted comprehensive research and successfully integrated AWS Bedrock’s Sonnet 3 model with deep-chat, im-proving the ML-viz platform’s capabilities and user engage-ment with real-time data visualization and interaction.",
+      "Led the development of a product to help Software Architectsand Cybersecurity experts identify and resolve application threats and vulnerabilities.",
       "Collaboratively developed Boutique, a custom data visualization library using Apache ECharts with React, facilitating seamless chart integration to provide real-time insights across finance, healthcare, and business intelligence for our team.",
       "Developed advanced annotation functionality in a collaborative document project called Annotation, similar to Google Docs, with features such as nested annotations.",
-      "Led the development of a product from scratch aimed at assisting Software Architects and Cybersecurity experts in identifying and resolving potential application threats and vulnerabilities.",
       "Automated the code-signing process for Electron apps on Linux using DSA and RSA algorithms, reducing manual effort by 50%"
     ],
-    techStack: ["React" , "TypeScript", "NodeJS", "Express", "Shell", "PostgreSQl", "Prisma", "Mantine UI"],
+    techStack: ["Next.js", "React" , "TypeScript", "NodeJS", "Express", "Shell", "PostgreSQl", "Prisma", "Docker", "Mantine UI"],
     location: "Gurgaon, India",
     fromTo: "May 2024 - Present",
   },
@@ -151,12 +152,23 @@ export const work: Work[] = [
     role: "Full Stack Developer",
     description: [
       "Developed a screen recorder application for macOS, named Frame.io, within 2 months, featuring a custom mouse simulation over the video recording.",
-      "Implemented a binary search algorithm to achieve 90% precision in mouse simulation, enhancing the accuracy of mouse pointer tracking in recorded videos.",
+      "Implemented a binary search algorithm to achieve 100% precision in mouse simulation, enhancing the accuracy of mouse pointer tracking in recorded videos.",
       "Eliminated 100% manual updates in electron based macOs Full Stack app by electron github publish."
     ],
     techStack: ["React" , "TypeScript", "NodeJS", "ElectronJS", "RecordKit"],
     location: "Remote, India",
     fromTo: "March 2024 - April 2024",
+  },
+  {
+    company: "Maxroom | Freelance",
+    role: "Full Stack Developer",
+    description: [
+      "Built a tool to fetch AI-generated video data from AWS S3 and automate uploads to various social media platforms.",
+      " Integrated with the client’s platform to retrieve video meta-data and ensure seamless content processing.",
+    ],
+    techStack: ["React" , "TypeScript", "NodeJS", "ElectronJS", "AWS"],
+    location: "Remote, India",
+    fromTo: "January 2024 - March 2024",
   },
   {
     company: "XpressBites",
