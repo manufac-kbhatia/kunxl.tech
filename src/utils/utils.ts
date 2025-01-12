@@ -135,7 +135,7 @@ export const versionControl: Skill[] = [
 export const work: Work[] = [
   {
     company: "Manufac Analytics",
-    role: "Software Developer Engineer",
+    role: "Software Development Engineer",
     description: [
       "Conducted comprehensive research and successfully integrated AWS Bedrock’s Sonnet 3 model with deep-chat, im-proving the ML-viz platform’s capabilities and user engage-ment with real-time data visualization and interaction.",
       "Led the development of a product to help Software Architectsand Cybersecurity experts identify and resolve application threats and vulnerabilities.",
