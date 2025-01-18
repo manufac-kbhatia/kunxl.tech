@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CalendarHeatmap from "react-calendar-heatmap";
 import { LeetCodeChart } from "../LeetCodeChart";
 
@@ -29,8 +29,9 @@ export function LeetCodeHeatmap() {
   const [data, setData] = useState<Progress[]>();
   const [total, setTotal] = useState(0);
   const [insights, setInsights] = useState<UserStatistics>();
+  const [loaing, setLoading] = useState(false);
 
-  const handleClick = async () => {
+  const getData = async () => {
     const response = await fetch(
       "https://leetcode-stats-api.herokuapp.com/bhatiakbkb"
     );
@@ -46,17 +47,23 @@ export function LeetCodeHeatmap() {
     setData(transformedData);
     setTotal(data.totalSolved);
     setInsights(data);
+    setLoading(false);
   };
 
+  useEffect(() => {
+    setLoading(true);
+    getData();
+  }, []);
+
+  if (loaing === true) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <div className="w-40 h-40 border-8 border-gray-200 border-t-customBlue rounded-full animate-spin"></div>
+      </div>
+    );
+  }
   return (
     <div className="flex flex-col items-center gap-5 w-full">
-      <button
-        className="w-fit text-3xl text-customOrange border-r-4 border-b-4 border-2 border-customOrange rounded-full font-extrabold p-2"
-        onClick={() => handleClick()}
-      >
-        Click Here
-      </button>
-
       {data && (
         <div className="w-full flex flex-col items-center gap-5">
           <div className="text-5xl md:text-6xl">
@@ -83,9 +90,7 @@ export function LeetCodeHeatmap() {
         </div>
       )}
 
-      {insights && (
-        <LeetCodeChart insights={insights} />
-      )}
+      {insights && <LeetCodeChart insights={insights} />}
     </div>
   );
 }

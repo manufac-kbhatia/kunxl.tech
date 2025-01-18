@@ -171,9 +171,6 @@ export default function Home() {
 
         {/* Leetcode heatmap */}
         <div className="flex flex-col gap-4 items-center">
-          <div className="text-customGreen text-4xl md:text-6xl text-center">
-            Want to see more ?
-          </div>
           <LeetCodeHeatmap />
         </div>
 
