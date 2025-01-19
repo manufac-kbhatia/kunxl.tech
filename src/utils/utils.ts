@@ -21,20 +21,20 @@ export interface Skill {
 }
 
 export interface Work {
-  company: string,
-  role: string,
-  description: string[],
-  techStack: string[],
-  location: string,
-  fromTo: string,
+  company: string;
+  role: string;
+  description: string[];
+  techStack: string[];
+  location: string;
+  fromTo: string;
 }
 
 export interface Project {
-  name: string,
-  description: string,
-  techStack: string[],
-  github?: string,
-  liveURL?: string,
+  name: string;
+  description: string;
+  techStack: string[];
+  github?: string;
+  liveURL?: string;
 }
 
 export const languages: Skill[] = [
@@ -141,9 +141,20 @@ export const work: Work[] = [
       "Led the development of a product to help Software Architectsand Cybersecurity experts identify and resolve application threats and vulnerabilities.",
       "Collaboratively developed Boutique, a custom data visualization library using Apache ECharts with React, facilitating seamless chart integration to provide real-time insights across finance, healthcare, and business intelligence for our team.",
       "Developed advanced annotation functionality in a collaborative document project called Annotation, similar to Google Docs, with features such as nested annotations.",
-      "Automated the code-signing process for Electron apps on Linux using DSA and RSA algorithms, reducing manual effort by 50%"
+      "Automated the code-signing process for Electron apps on Linux using DSA and RSA algorithms, reducing manual effort by 50%",
     ],
-    techStack: ["Next.js", "React" , "TypeScript", "NodeJS", "Express", "Shell", "PostgreSQl", "Prisma", "Docker", "Mantine UI"],
+    techStack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "NodeJS",
+      "Express",
+      "Shell",
+      "PostgreSQl",
+      "Prisma",
+      "Docker",
+      "Mantine UI",
+    ],
     location: "Gurgaon, India",
     fromTo: "May 2024 - Present",
   },
@@ -153,9 +164,9 @@ export const work: Work[] = [
     description: [
       "Developed a screen recorder application for macOS, named Frame.io, within 2 months, featuring a custom mouse simulation over the video recording.",
       "Implemented a binary search algorithm to achieve 100% precision in mouse simulation, enhancing the accuracy of mouse pointer tracking in recorded videos.",
-      "Eliminated 100% manual updates in electron based macOs Full Stack app by electron github publish."
+      "Eliminated 100% manual updates in electron based macOs Full Stack app by electron github publish.",
     ],
-    techStack: ["React" , "TypeScript", "NodeJS", "ElectronJS", "RecordKit"],
+    techStack: ["React", "TypeScript", "NodeJS", "ElectronJS", "RecordKit"],
     location: "Remote, India",
     fromTo: "March 2024 - April 2024",
   },
@@ -166,7 +177,7 @@ export const work: Work[] = [
       "Built a tool to fetch AI-generated video data from AWS S3 and automate uploads to various social media platforms.",
       " Integrated with the client’s platform to retrieve video meta-data and ensure seamless content processing.",
     ],
-    techStack: ["React" , "TypeScript", "NodeJS", "ElectronJS", "AWS"],
+    techStack: ["React", "TypeScript", "NodeJS", "ElectronJS", "AWS"],
     location: "Remote, India",
     fromTo: "January 2024 - March 2024",
   },
@@ -176,13 +187,13 @@ export const work: Work[] = [
     description: [
       "Developed a full stack application using React, Express.js, and MongoDB.",
       "Implemented a RESTful API for the application.",
-      "Utilized AWS S3 to store and serve images for the application."
+      "Utilized AWS S3 to store and serve images for the application.",
     ],
-    techStack: ["React" , "TypeScript", "Express.js", "MongoDB", "AWS"],
+    techStack: ["React", "TypeScript", "Express.js", "MongoDB", "AWS"],
     location: "Remote, India",
     fromTo: "April 2023 - August 2023",
-  }
-]
+  },
+];
 
 export const projects: Project[] = [
   {
@@ -190,14 +201,14 @@ export const projects: Project[] = [
     description: "A fully featured React custom hook library",
     techStack: ["React.js", "Next.js", "Typescript", "Tailwind", "Nextra"],
     github: "https://github.com/Kunalkbhatia/HookMaster",
-    liveURL: "https://www.hook-master.xyz/"
+    liveURL: "https://www.hook-master.xyz/",
   },
   {
     name: "Short Me",
     description: "URL shortening amplified, where insights meet impact",
     techStack: ["React.js", "Next.js", "NextAuth", "Typescript", "Tailwind"],
     github: "https://github.com/Kunalkbhatia/shortMe",
-    liveURL: "https://www.shortme.fun/"
+    liveURL: "https://www.shortme.fun/",
   },
   {
     name: "kunxl.tech",
@@ -212,4 +223,4 @@ export const projects: Project[] = [
     techStack: ["Javascript", "Node.js", "Puppeteer.js"],
     github: "https://github.com/Kunalkbhatia/QuickIntern",
   },
-]
+];

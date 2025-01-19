@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-spave-grotesk",
-  weight: '700',
-  subsets: ["latin",]
-})
+  weight: "700",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Kunal",
@@ -31,14 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceGrotesk.className} ${geistSans.variable} ${geistMono.variable} antialiased relative text-white bg-customShade min-h-screen`}
+        className={`${spaceGrotesk.className} ${geistSans.variable} ${geistMono.variable} relative min-h-screen bg-customShade text-white antialiased`}
       >
         {/* Noisy background image */}
-        <div className="fixed inset-0 bg-[url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')] bg-repeat bg-[length:109px] opacity-[0.06] z-10" />
+        <div className="fixed inset-0 z-10 bg-[url('https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png')] bg-[length:109px] bg-repeat opacity-[0.06]" />
         {/* Semi-transparent overlay */}
-        <div className="relative opacity-95 z-20">
-        {children}
-        </div>
+        <div className="relative z-20 opacity-95">{children}</div>
       </body>
     </html>
   );

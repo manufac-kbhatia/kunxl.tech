@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import monkey from "../../../public/icon.png";
@@ -10,43 +10,42 @@ export function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = 200; 
+      const scrollThreshold = 200;
       setIsVisible(window.scrollY > scrollThreshold);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-    <div 
-      className={`
-        fixed inset-0
-        flex justify-between items-center 
-        styled-div z-30 p-5 
-        transition-all duration-300 ease-in-out
-        ${isVisible 
-          ? 'opacity-100 translate-y-0' 
-          : 'opacity-0 -translate-y-full'}
-      `}
+    <div
+      className={`styled-div fixed inset-0 z-30 flex items-center justify-between p-5 transition-all duration-300 ease-in-out ${
+        isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
+      } `}
     >
-      <div className="w-10 h-10 overflow-hidden rounded-full">
+      <div className="h-10 w-10 overflow-hidden rounded-full">
         <Image
           src={monkey}
           alt="monkey"
           height={100}
           width={100}
-          className="bg-customYellow rounded-full w-full h-full object-cover"
+          className="h-full w-full rounded-full bg-customYellow object-cover"
         />
       </div>
-      <nav className="flex gap-5 items-center">
+      <nav className="flex items-center gap-5">
         <Link href="#about">About</Link>
         <Link href="#skills">Skills</Link>
         <Link href="#work">Work</Link>
         <Link href="#projects">Projects</Link>
-        <Link href="https://drive.google.com/drive/folders/1LlIYE-RSdiewmPfpWViG3Cd2I6DWeAZW?usp=sharing" className='text-2xl bg-customYellow p-2 rounded-full text-customShade'>CV</Link>
+        <Link
+          href="https://drive.google.com/drive/folders/1LlIYE-RSdiewmPfpWViG3Cd2I6DWeAZW?usp=sharing"
+          className="rounded-full bg-customYellow p-2 text-2xl text-customShade"
+        >
+          CV
+        </Link>
       </nav>
     </div>
   );

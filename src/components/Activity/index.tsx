@@ -68,7 +68,7 @@ export function Activity() {
       } else if (data.op === 0) {
         const vsCode: VSCodeActivity = data.d.activities.find(
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          (activity: any) => activity.name === "Visual Studio Code"
+          (activity: any) => activity.name === "Visual Studio Code",
         );
         if (vsCode) {
           setVSCodeData(vsCode);
@@ -115,41 +115,40 @@ export function Activity() {
 
   if (spotifyData !== null) {
     return (
-      <div className="flex gap-5 items-center">
+      <div className="flex items-center gap-5">
         <Image
           src={spotifyData?.album_art_url ?? monkey}
           alt="album cover"
           height={100}
           width={100}
-          className="rounded-full object-cover spin-fast"
+          className="spin-fast rounded-full object-cover"
         />
         <div className="flex flex-col gap-2">
-          <div className="text-customLightBlue text-3xl">
+          <div className="text-3xl text-customLightBlue">
             {spotifyData?.artist.split("; ")[0]}
           </div>
-          <div className="text-customPurple text-xl">{spotifyData?.song}</div>
-          <div className="w-full h-1 bg-gray-200 rounded-full">
+          <div className="text-xl text-customPurple">{spotifyData?.song}</div>
+          <div className="h-1 w-full rounded-full bg-gray-200">
             <div
-              className="h-full bg-customRed rounded-full"
+              className="h-full rounded-full bg-customRed"
               style={{ width: `${progress}%` }}
             />
           </div>
           {vsCodeData && (
-            <div className="flex gap-2 text-customYellow text-sm items-center">
-              <div className="w-10 h-10 overflow-hidden border-customBlue border rounded-full">
+            <div className="flex items-center gap-2 text-sm text-customYellow">
+              <div className="h-10 w-10 overflow-hidden rounded-full border border-customBlue">
                 <Image
                   src={`https://cdn.discordapp.com/app-assets/${vsCodeData.application_id}/${vsCodeData.assets.small_image}.png`}
                   alt="vs code"
                   height={100}
                   width={100}
-                  className="rounded-full w-full h-full object-cover"
+                  className="h-full w-full rounded-full object-cover"
                 />
               </div>
               <div className="flex flex-wrap">
-
-              <div>{vsCodeData.state}</div>
-              <span>~</span>
-              <div>{vsCodeData.details}</div>
+                <div>{vsCodeData.state}</div>
+                <span>~</span>
+                <div>{vsCodeData.details}</div>
               </div>
             </div>
           )}
@@ -158,7 +157,7 @@ export function Activity() {
     );
   } else if (vsCodeData !== null) {
     return (
-      <div className="flex gap-5 items-center">
+      <div className="flex items-center gap-5">
         <Image
           src={`https://cdn.discordapp.com/app-assets/${vsCodeData.application_id}/${vsCodeData.assets.small_image}.png`}
           alt="album cover"
@@ -166,7 +165,7 @@ export function Activity() {
           width={100}
           className="rounded-3xl object-cover"
         />
-        <div className="text-2xl flex flex-col gap-1">
+        <div className="flex flex-col gap-1 text-2xl">
           <div className="text-customLightBlue">@kunxl</div>
           <div>
             <div className="text-customOrange">{vsCodeData.state}</div>
@@ -178,15 +177,15 @@ export function Activity() {
     );
   }
   return (
-    <div className="flex gap-5 items-center">
+    <div className="flex items-center gap-5">
       <Image
         src={monkey}
         alt="monkey"
         height={100}
         width={100}
-        className="bg-customGreen rounded-3xl"
+        className="rounded-3xl bg-customGreen"
       />
-      <div className="text-2xl flex flex-col gap-1">
+      <div className="flex flex-col gap-1 text-2xl">
         <div className="text-customLightBlue">@kunxl</div>
         <div className="text-customPurple">{status}</div>
         <Time />

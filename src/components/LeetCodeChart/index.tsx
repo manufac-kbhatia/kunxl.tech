@@ -18,7 +18,6 @@ import {
 } from "@/components/ui/chart";
 import { UserStatistics } from "../LeetcodeHeatMap";
 
-
 const chartConfig = {
   total: {
     label: "total",
@@ -37,12 +36,8 @@ const chartConfig = {
   },
 } satisfies ChartConfig;
 
-export function LeetCodeChart({
-  insights,
-}: {
-  insights: UserStatistics;
-}) {
-    console.log(insights);
+export function LeetCodeChart({ insights }: { insights: UserStatistics }) {
+  console.log(insights);
   const chartData = React.useMemo(() => {
     return [
       {
@@ -68,7 +63,7 @@ export function LeetCodeChart({
   }, [chartData]);
 
   return (
-    <Card className="flex flex-col w-full bg-customGreen">
+    <Card className="flex w-full flex-col bg-customGreen">
       <CardHeader className="items-center pb-0">
         <CardTitle>Total problems solved</CardTitle>
         <CardDescription>LeetCode</CardDescription>

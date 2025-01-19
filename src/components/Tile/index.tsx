@@ -4,7 +4,7 @@ import { Skill } from "@/utils/utils";
 export function Tile({ skill }: { skill: Skill }) {
   return (
     <div
-      className="flex gap-4 justify-center items-center text-xl w-[160px] md:w-[200px] p-3 border-[1px] border-b-8 rounded-3xl"
+      className="flex w-[160px] items-center justify-center gap-4 rounded-3xl border-[1px] border-b-8 p-3 text-xl md:w-[200px]"
       style={{ borderColor: skill.color }}
     >
       <Image src={skill.image} alt="javascript" width={30} height={30} />

@@ -33,11 +33,11 @@ export function LeetCodeHeatmap() {
 
   const getData = async () => {
     const response = await fetch(
-      "https://leetcode-stats-api.herokuapp.com/bhatiakbkb"
+      "https://leetcode-stats-api.herokuapp.com/bhatiakbkb",
     );
     const data = (await response.json()) as UserStatistics;
     const transformedData: Progress[] = Object.entries(
-      data.submissionCalendar
+      data.submissionCalendar,
     ).map(([timestamp, count]) => {
       const date = new Date(Number(timestamp) * 1000)
         .toISOString()
@@ -57,20 +57,20 @@ export function LeetCodeHeatmap() {
 
   if (loaing === true) {
     return (
-      <div className="flex items-center justify-center h-screen">
-        <div className="w-40 h-40 border-8 border-gray-200 border-t-customBlue rounded-full animate-spin"></div>
+      <div className="flex h-screen items-center justify-center">
+        <div className="h-40 w-40 animate-spin rounded-full border-8 border-gray-200 border-t-customBlue"></div>
       </div>
     );
   }
   return (
-    <div className="flex flex-col items-center gap-5 w-full">
+    <div className="flex w-full flex-col items-center gap-5">
       {data && (
-        <div className="w-full flex flex-col items-center gap-5">
+        <div className="flex w-full flex-col items-center gap-5">
           <div className="text-5xl md:text-6xl">
             <span className="text-customGreen">LeetCode</span>:{" "}
             <span className="text-customBlue">{total} + </span>
           </div>
-          <div className="bg-white p-5 rounded-lg w-full">
+          <div className="w-full rounded-lg bg-white p-5">
             <CalendarHeatmap
               startDate={new Date("2023-12-08")}
               endDate={new Date("2024-8-31")}
