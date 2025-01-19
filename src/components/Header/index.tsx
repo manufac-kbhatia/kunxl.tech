@@ -3,7 +3,7 @@ import Link from "next/link";
 export function Header() {
   return (
     <div
-      className={`fixed inset-0 z-30 p-5`}
+      className={`p-6`}
     >
        <Link
           href="https://drive.google.com/drive/folders/1LlIYE-RSdiewmPfpWViG3Cd2I6DWeAZW?usp=sharing"
