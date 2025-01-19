@@ -10,6 +10,7 @@ import {
 } from "@tabler/icons-react";
 import { Tile } from "@/components/Tile";
 import {
+  andMore,
   database,
   devops,
   frameworks,
@@ -136,6 +137,10 @@ export default function Home() {
               {versionControl.map((skill) => (
                 <Tile key={skill.skill} skill={skill} />
               ))}
+            </div>
+            {/* And more */}
+            <div className="flex flex-wrap justify-center gap-5">
+                <Tile skill={andMore} />
             </div>
           </div>
         </div>

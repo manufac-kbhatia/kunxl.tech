@@ -14,6 +14,7 @@ import postgres from "../../public/postgresql.svg";
 import bash from "../../public/bash-icon-svgrepo-com.svg";
 import git from "../../public/git.svg";
 import electron from "../../public/electron-svgrepo-com.svg";
+import and from "../../public/and.svg";
 export interface Skill {
   skill: string;
   image: string;
@@ -131,6 +132,12 @@ export const versionControl: Skill[] = [
     color: "#6ee7b7",
   },
 ];
+
+export const andMore: Skill = {
+    skill: "More",
+    image: and,
+    color: "#ffbe6f",
+}
 
 export const work: Work[] = [
   {
