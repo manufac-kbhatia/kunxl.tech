@@ -5,7 +5,7 @@ import { IconBrandGithub, IconCode, IconLink } from "@tabler/icons-react";
 
 export function WorkCard({ work }: { work: Work }) {
   return (
-    <div className="mx-auto flex max-w-4xl flex-col gap-5 rounded-3xl border-2 border-b-8 border-r-8 border-customRed p-5">
+    <div className="mx-auto flex max-w-4xl flex-col gap-5 rounded-3xl border-t-[1px] border-l-[1px] shadow-[2px_6px_0px_1px_#FF085E] md:shadow-[6px_6px_0px_1px_#FF085E] border-red-500 p-5">
       <div className="flex items-center justify-between">
         <div className="flex justify-between gap-3">
           <div className="h-6 w-6 overflow-hidden rounded-3xl">
