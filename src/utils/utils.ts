@@ -219,7 +219,7 @@ export const projects: Project[] = [
   },
   {
     name: "kunxl.tech",
-    description: "A portfolio handcrafter by me in 7hours.",
+    description: "A portfolio handcrafted by me in 7hours.",
     techStack: ["NextJs", "Shadcn", "Framer-motion", "Websockets"],
     liveURL: "https://www.kunxl.tech/",
     github: "https://www.kunxl.tech/",
