@@ -20,7 +20,6 @@ import {
   work,
 } from "@/utils/utils";
 import { ProjectCard, WorkCard } from "@/components/Card";
-import { LeetCodeHeatmap } from "@/components/LeetcodeHeatMap";
 import { Activity } from "@/components/Activity";
 import { Header } from "@/components/Header";
 
@@ -169,11 +168,6 @@ export default function Home() {
               return <ProjectCard key={project.name} project={project} />;
             })}
           </div>
-        </div>
-
-        {/* Leetcode heatmap */}
-        <div className="flex flex-col items-center gap-4">
-          <LeetCodeHeatmap />
         </div>
 
         {/* Footer */}
