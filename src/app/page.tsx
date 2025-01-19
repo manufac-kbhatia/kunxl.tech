@@ -164,7 +164,7 @@ export default function Home() {
             <span className="text-customGreen">Code</span>:{" "}
             <span className="text-customBlue">projects</span>
           </div>
-          <div className="grid w-full gap-5 lg:grid-cols-2">
+          <div className="grid w-full gap-10 lg:grid-cols-2">
             {projects.map((project) => {
               return <ProjectCard key={project.name} project={project} />;
             })}

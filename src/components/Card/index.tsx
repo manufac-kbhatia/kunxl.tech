@@ -42,7 +42,7 @@ export function WorkCard({ work }: { work: Work }) {
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col gap-5 rounded-xl border-2 border-b-4 border-r-4 border-customOrange p-5">
+    <div className="flex flex-col gap-5 rounded-xl border-t-[1px] border-l-[1px] shadow-[2px_6px_0px_1px_#ffbe6f] md:shadow-[6px_6px_0px_1px_#ffbe6f] border-customOrange p-5">
       <div className="flex justify-between">
         <div className="flex justify-between gap-3">
           <div className="h-6 w-6 overflow-hidden rounded-3xl">
