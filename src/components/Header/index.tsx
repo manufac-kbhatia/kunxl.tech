@@ -1,41 +1,11 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import monkey from "../../../public/icon.png";
 
 export function Header() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollThreshold = 200;
-      setIsVisible(window.scrollY > scrollThreshold);
-    };
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div
-      className={`styled-div fixed inset-0 z-30 flex items-center justify-between p-5 transition-all duration-300 ease-in-out ${
-        isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-      } `}
+      className={`fixed inset-0 z-30 p-5`}
     >
-      <div className="h-10 w-10 overflow-hidden rounded-full">
-        <Image
-          src={monkey}
-          alt="monkey"
-          height={100}
-          width={100}
-          className="h-full w-full rounded-full bg-customYellow object-cover"
-        />
-      </div>
-      <nav className="flex items-center gap-5">
+      <nav className="flex justify-between items-center gap-5 p-4 rounded-lg max-w-2xl mx-auto text-2xl backdrop-blur-lg text-customBlue">
         <Link href="#about">About</Link>
         <Link href="#skills">Skills</Link>
         <Link href="#work">Work</Link>
