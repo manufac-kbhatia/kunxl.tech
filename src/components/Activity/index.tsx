@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import monkey from "../../../public/icon.png";
+import monkey from "../../../public/monkey.avif";
 import { useEffect, useState } from "react";
 import { Time } from "../Time";
 
