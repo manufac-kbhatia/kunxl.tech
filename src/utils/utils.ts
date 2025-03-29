@@ -207,14 +207,14 @@ export const projects: Project[] = [
     name: "Hook Master",
     description: "A fully featured React custom hook library",
     techStack: ["React.js", "Next.js", "Typescript", "Tailwind", "Nextra"],
-    github: "https://github.com/Kunalkbhatia/HookMaster",
+    github: "https://github.com/manufac-kbhatia/HookMaster",
     liveURL: "https://www.hook-master.xyz/",
   },
   {
     name: "Short Me",
     description: "URL shortening amplified, where insights meet impact",
     techStack: ["React.js", "Next.js", "NextAuth", "Typescript", "Tailwind"],
-    github: "https://github.com/Kunalkbhatia/shortMe",
+    github: "https://github.com/manufac-kbhatia/shortMe",
     liveURL: "https://www.shortme.fun/",
   },
   {
@@ -228,6 +228,6 @@ export const projects: Project[] = [
     name: "Quick Intern",
     description: "Automate the process of apply internship at Internshala",
     techStack: ["Javascript", "Node.js", "Puppeteer.js"],
-    github: "https://github.com/Kunalkbhatia/QuickIntern",
+    github: "https://github.com/manufac-kbhatia/QuickIntern",
   },
 ];

@@ -43,7 +43,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex gap-2 text-customRed">
-                <a href="https://github.com/Kunalkbhatia">
+                <a href="https://github.com/manufac-kbhatia">
                   <IconBrandGithub className="h-10 w-10" />
                 </a>
                 <a href="mailto:bhatiakbkb@gmail.com">
@@ -175,7 +175,7 @@ export default function Home() {
           <div className="h-1 w-full bg-customRed"></div>
           <div className="flex items-center justify-between gap-5">
             <div className="flex gap-2 text-customGreen">
-              <a href="https://github.com/Kunalkbhatia">
+              <a href="https://github.com/manufac-kbhatia">
                 <IconBrandGithub className="h-5 w-5 md:h-10 md:w-10" />
               </a>
               <a href="mailto:bhatiakbkb@gmail.com">
