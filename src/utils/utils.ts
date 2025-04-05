@@ -145,13 +145,17 @@ export const work: Work[] = [
     role: "Software Development Engineer",
     description: [
       "Conducted comprehensive research and successfully integrated AWS Bedrock’s Sonnet 3 model with deep-chat, im-proving the ML-viz platform’s capabilities and user engage-ment with real-time data visualization and interaction.",
+      "Developed Stitch, a full-stack web app to generate SVGs from raster images and convert them into stitch files for embroidery machines. Integrated Stable Diffusion 3.0 AI for image generation, OpenCV, and Potrace for image processing, with AWS S3 support for file storage.",
       "Led the development of a product to help Software Architectsand Cybersecurity experts identify and resolve application threats and vulnerabilities.",
       "Collaboratively developed Boutique, a custom data visualization library using Apache ECharts with React, facilitating seamless chart integration to provide real-time insights across finance, healthcare, and business intelligence for our team.",
       "Developed advanced annotation functionality in a collaborative document project called Annotation, similar to Google Docs, with features such as nested annotations.",
       "Automated the code-signing process for Electron apps on Linux using DSA and RSA algorithms, reducing manual effort by 50%",
+      "Consistently wrote clean, reusable, and maintainable code, refactoring and optimizing across multiple projects, reducing production bugs by 75%."
     ],
     techStack: [
       "Next.js",
+      "AWS",
+      "CI/CD",
       "React",
       "TypeScript",
       "NodeJS",
@@ -163,7 +167,7 @@ export const work: Work[] = [
       "Mantine UI",
     ],
     location: "Gurgaon, India",
-    fromTo: "May 2024 - Present",
+    fromTo: "May 2024 - March 2025",
   },
   {
     company: "Frame.io | Freelance",
@@ -204,6 +208,13 @@ export const work: Work[] = [
 
 export const projects: Project[] = [
   {
+    name: "Cloki",
+    description: "Simplify time tracking with Cloki AI",
+    techStack: ["React.js", "Next.js", "Typescript", "Monorepo", "Tailwind", "AWS", "Docker", "CI/CD", "Langchain", "Langgraph", "Langsmith"],
+    github: "https://github.com/manufac-kbhatia/clocki",
+    liveURL: "https://cloki.space",
+  },
+  {
     name: "Hook Master",
     description: "A fully featured React custom hook library",
     techStack: ["React.js", "Next.js", "Typescript", "Tailwind", "Nextra"],
@@ -221,13 +232,7 @@ export const projects: Project[] = [
     name: "kunxl.tech",
     description: "A portfolio handcrafted by me in 7hours.",
     techStack: ["NextJs", "Shadcn", "Framer-motion", "Websockets"],
+    github: "https://github.com/manufac-kbhatia/kunxl.tech",
     liveURL: "https://www.kunxl.tech/",
-    github: "https://www.kunxl.tech/",
-  },
-  {
-    name: "Quick Intern",
-    description: "Automate the process of apply internship at Internshala",
-    techStack: ["Javascript", "Node.js", "Puppeteer.js"],
-    github: "https://github.com/manufac-kbhatia/QuickIntern",
   },
 ];

@@ -7,7 +7,7 @@ export function Header() {
     >
        <Link
           href="https://drive.google.com/drive/folders/1LlIYE-RSdiewmPfpWViG3Cd2I6DWeAZW?usp=sharing"
-          className="md:hidden rounded-full bg-customYellow p-2 text-2xl text-customShade"
+          className="md:hidden rounded-full p-2 text-2xl text-customShade"
         >
           CV
         </Link>
